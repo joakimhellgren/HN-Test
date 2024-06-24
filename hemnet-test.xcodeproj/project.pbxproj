@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		143D4B702C274E1300193CD7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143D4B6F2C274E1300193CD7 /* Environment.swift */; };
+		1443E93C2C278172009DEAF0 /* API.Endpoint.PropertySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443E93B2C278172009DEAF0 /* API.Endpoint.PropertySearch.swift */; };
+		1443E93E2C2788AF009DEAF0 /* PropertySearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443E93D2C2788AF009DEAF0 /* PropertySearchService.swift */; };
+		1443E9402C278AE2009DEAF0 /* PropertySearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443E93F2C278AE2009DEAF0 /* PropertySearchProvider.swift */; };
+		144BB1CA2C22B8D40019C111 /* API.Endpoint.PropertyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BB1C92C22B8D40019C111 /* API.Endpoint.PropertyDetail.swift */; };
+		144BB1CE2C22BF610019C111 /* MockPropertyDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 144BB1CD2C22BF610019C111 /* MockPropertyDetail.json */; };
+		144BB1F92C24A90E0019C111 /* PropertyDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BB1F82C24A90E0019C111 /* PropertyDetailService.swift */; };
+		144BB1FB2C24A9280019C111 /* PropertyDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BB1FA2C24A9280019C111 /* PropertyDetailProvider.swift */; };
+		14A1FB552C2866C40042DDDE /* HTTPDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FB542C2866C40042DDDE /* HTTPDataDownloader.swift */; };
+		14A1FB5D2C2871250042DDDE /* API.Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FB5C2C2871250042DDDE /* API.Endpoint.swift */; };
+		14A1FB6A2C2874B90042DDDE /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FB692C2874B90042DDDE /* ServiceProtocol.swift */; };
+		14A1FB742C287F040042DDDE /* API.Model.PropertyListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FB732C287F040042DDDE /* API.Model.PropertyListing.swift */; };
+		14A1FB792C28E9E70042DDDE /* PropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FB782C28E9E70042DDDE /* PropertyView.swift */; };
+		14A1FB7D2C2994B70042DDDE /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FB7C2C2994B70042DDDE /* Provider.swift */; };
+		14A1FB7F2C2997290042DDDE /* ImageLoaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FB7E2C2997290042DDDE /* ImageLoaderModel.swift */; };
+		14A1FB812C2998330042DDDE /* PropertyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FB802C2998330042DDDE /* PropertyDetailViewModel.swift */; };
+		14A1FB832C299A860042DDDE /* ProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FB822C299A860042DDDE /* ProviderTests.swift */; };
+		14B21EFD2C206C7A00F99E9E /* hemnet_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B21EFC2C206C7A00F99E9E /* hemnet_testApp.swift */; };
+		14B21EFF2C206C7A00F99E9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B21EFE2C206C7A00F99E9E /* ContentView.swift */; };
+		14B21F012C206C7B00F99E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B21F002C206C7B00F99E9E /* Assets.xcassets */; };
+		14B21F042C206C7B00F99E9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B21F032C206C7B00F99E9E /* Preview Assets.xcassets */; };
+		14B21F0E2C206E9600F99E9E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B21F0D2C206E9600F99E9E /* API.swift */; };
+		14B21F132C20737800F99E9E /* MockProperties.json in Resources */ = {isa = PBXBuildFile; fileRef = 14B21F122C20737800F99E9E /* MockProperties.json */; };
+		14B21F162C20DE1D00F99E9E /* API.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B21F152C20DE1D00F99E9E /* API.Model.swift */; };
+		14B21F182C20DE5000F99E9E /* API.Model.Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B21F172C20DE5000F99E9E /* API.Model.Property.swift */; };
+		14B21F1F2C20DFEA00F99E9E /* PropertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B21F1E2C20DFEA00F99E9E /* PropertyModel.swift */; };
+		14E581F62C2172B6009C737D /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E581F52C2172B6009C737D /* ImageLoaderView.swift */; };
+		14E581FE2C21B896009C737D /* API.Model.Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E581FD2C21B896009C737D /* API.Model.Area.swift */; };
+		14E582012C21CE59009C737D /* AreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E582002C21CE59009C737D /* AreaModel.swift */; };
+		14E5820D2C21F2D8009C737D /* AreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E5820C2C21F2D8009C737D /* AreaView.swift */; };
+		14E582152C22513C009C737D /* PropertyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E582142C22513C009C737D /* PropertyDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		144BB1E22C237F140019C111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14B21EF12C206C7A00F99E9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B21EF82C206C7A00F99E9E;
+			remoteInfo = "hemnet-test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		143D4B6F2C274E1300193CD7 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1443E9302C276D85009DEAF0 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
+		1443E9312C276E4A009DEAF0 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
+		1443E93B2C278172009DEAF0 /* API.Endpoint.PropertySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Endpoint.PropertySearch.swift; sourceTree = "<group>"; };
+		1443E93D2C2788AF009DEAF0 /* PropertySearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertySearchService.swift; sourceTree = "<group>"; };
+		1443E93F2C278AE2009DEAF0 /* PropertySearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertySearchProvider.swift; sourceTree = "<group>"; };
+		1443E9412C278EE2009DEAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		144BB1C92C22B8D40019C111 /* API.Endpoint.PropertyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Endpoint.PropertyDetail.swift; sourceTree = "<group>"; };
+		144BB1CD2C22BF610019C111 /* MockPropertyDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockPropertyDetail.json; sourceTree = "<group>"; };
+		144BB1DE2C237F140019C111 /* hemnet-unitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hemnet-unitTest.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		144BB1F82C24A90E0019C111 /* PropertyDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailService.swift; sourceTree = "<group>"; };
+		144BB1FA2C24A9280019C111 /* PropertyDetailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailProvider.swift; sourceTree = "<group>"; };
+		14A1FB542C2866C40042DDDE /* HTTPDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataDownloader.swift; sourceTree = "<group>"; };
+		14A1FB5C2C2871250042DDDE /* API.Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Endpoint.swift; sourceTree = "<group>"; };
+		14A1FB692C2874B90042DDDE /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		14A1FB732C287F040042DDDE /* API.Model.PropertyListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Model.PropertyListing.swift; sourceTree = "<group>"; };
+		14A1FB782C28E9E70042DDDE /* PropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyView.swift; sourceTree = "<group>"; };
+		14A1FB7C2C2994B70042DDDE /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		14A1FB7E2C2997290042DDDE /* ImageLoaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderModel.swift; sourceTree = "<group>"; };
+		14A1FB802C2998330042DDDE /* PropertyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailViewModel.swift; sourceTree = "<group>"; };
+		14A1FB822C299A860042DDDE /* ProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTests.swift; sourceTree = "<group>"; };
+		14B21EF92C206C7A00F99E9E /* hemnet-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hemnet-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B21EFC2C206C7A00F99E9E /* hemnet_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hemnet_testApp.swift; sourceTree = "<group>"; };
+		14B21EFE2C206C7A00F99E9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14B21F002C206C7B00F99E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14B21F032C206C7B00F99E9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14B21F0D2C206E9600F99E9E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		14B21F122C20737800F99E9E /* MockProperties.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockProperties.json; sourceTree = "<group>"; };
+		14B21F152C20DE1D00F99E9E /* API.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Model.swift; sourceTree = "<group>"; };
+		14B21F172C20DE5000F99E9E /* API.Model.Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Model.Property.swift; sourceTree = "<group>"; };
+		14B21F1E2C20DFEA00F99E9E /* PropertyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
+		14E581F52C2172B6009C737D /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
+		14E581FD2C21B896009C737D /* API.Model.Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Model.Area.swift; sourceTree = "<group>"; };
+		14E582002C21CE59009C737D /* AreaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaModel.swift; sourceTree = "<group>"; };
+		14E5820C2C21F2D8009C737D /* AreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaView.swift; sourceTree = "<group>"; };
+		14E582142C22513C009C737D /* PropertyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		144BB1DB2C237F140019C111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B21EF62C206C7A00F99E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143D4B682C272C1B00193CD7 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				14A1FB822C299A860042DDDE /* ProviderTests.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		143D4B6C2C2739F900193CD7 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				14A1FB542C2866C40042DDDE /* HTTPDataDownloader.swift */,
+				14B21F0C2C206E8F00F99E9E /* API */,
+				144BB1F52C24A8DC0019C111 /* Provider */,
+				144BB1F22C24A8990019C111 /* Service */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		1443E92F2C276D71009DEAF0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				143D4B6F2C274E1300193CD7 /* Environment.swift */,
+				1443E9302C276D85009DEAF0 /* PROD.xcconfig */,
+				1443E9312C276E4A009DEAF0 /* DEV.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		144BB1DF2C237F140019C111 /* hemnet-unitTest */ = {
+			isa = PBXGroup;
+			children = (
+				143D4B682C272C1B00193CD7 /* Backend */,
+			);
+			path = "hemnet-unitTest";
+			sourceTree = "<group>";
+		};
+		144BB1F22C24A8990019C111 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				14A1FB692C2874B90042DDDE /* ServiceProtocol.swift */,
+				1443E93D2C2788AF009DEAF0 /* PropertySearchService.swift */,
+				144BB1F82C24A90E0019C111 /* PropertyDetailService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		144BB1F52C24A8DC0019C111 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				14A1FB7C2C2994B70042DDDE /* Provider.swift */,
+				1443E93F2C278AE2009DEAF0 /* PropertySearchProvider.swift */,
+				144BB1FA2C24A9280019C111 /* PropertyDetailProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		14A1FB7A2C290FD50042DDDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14E581F52C2172B6009C737D /* ImageLoaderView.swift */,
+				14B21EFE2C206C7A00F99E9E /* ContentView.swift */,
+				14E5820C2C21F2D8009C737D /* AreaView.swift */,
+				14A1FB782C28E9E70042DDDE /* PropertyView.swift */,
+				14E582142C22513C009C737D /* PropertyDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14A1FB7B2C29105C0042DDDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14B21F1E2C20DFEA00F99E9E /* PropertyModel.swift */,
+				14E582002C21CE59009C737D /* AreaModel.swift */,
+				14A1FB7E2C2997290042DDDE /* ImageLoaderModel.swift */,
+				14A1FB802C2998330042DDDE /* PropertyDetailViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14B21EF02C206C7A00F99E9E = {
+			isa = PBXGroup;
+			children = (
+				14B21EFB2C206C7A00F99E9E /* hemnet-test */,
+				144BB1DF2C237F140019C111 /* hemnet-unitTest */,
+				14B21EFA2C206C7A00F99E9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14B21EFA2C206C7A00F99E9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14B21EF92C206C7A00F99E9E /* hemnet-test.app */,
+				144BB1DE2C237F140019C111 /* hemnet-unitTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14B21EFB2C206C7A00F99E9E /* hemnet-test */ = {
+			isa = PBXGroup;
+			children = (
+				1443E9412C278EE2009DEAF0 /* Info.plist */,
+				14B21F002C206C7B00F99E9E /* Assets.xcassets */,
+				14B21EFC2C206C7A00F99E9E /* hemnet_testApp.swift */,
+				14A1FB7B2C29105C0042DDDE /* Model */,
+				14A1FB7A2C290FD50042DDDE /* View */,
+				1443E92F2C276D71009DEAF0 /* Configuration */,
+				143D4B6C2C2739F900193CD7 /* Backend */,
+				14B21F022C206C7B00F99E9E /* Preview Content */,
+			);
+			path = "hemnet-test";
+			sourceTree = "<group>";
+		};
+		14B21F022C206C7B00F99E9E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				144BB1CD2C22BF610019C111 /* MockPropertyDetail.json */,
+				14B21F122C20737800F99E9E /* MockProperties.json */,
+				14B21F032C206C7B00F99E9E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14B21F0C2C206E8F00F99E9E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				14B21F0D2C206E9600F99E9E /* API.swift */,
+				14B21F192C20DE7500F99E9E /* Endpoint */,
+				14B21F142C20DE0500F99E9E /* Model */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		14B21F142C20DE0500F99E9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14B21F152C20DE1D00F99E9E /* API.Model.swift */,
+				14B21F172C20DE5000F99E9E /* API.Model.Property.swift */,
+				14E581FD2C21B896009C737D /* API.Model.Area.swift */,
+				14A1FB732C287F040042DDDE /* API.Model.PropertyListing.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14B21F192C20DE7500F99E9E /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				14A1FB5C2C2871250042DDDE /* API.Endpoint.swift */,
+				144BB1C92C22B8D40019C111 /* API.Endpoint.PropertyDetail.swift */,
+				1443E93B2C278172009DEAF0 /* API.Endpoint.PropertySearch.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		144BB1DD2C237F140019C111 /* hemnet-unitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 144BB1E42C237F140019C111 /* Build configuration list for PBXNativeTarget "hemnet-unitTest" */;
+			buildPhases = (
+				144BB1DA2C237F140019C111 /* Sources */,
+				144BB1DB2C237F140019C111 /* Frameworks */,
+				144BB1DC2C237F140019C111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				144BB1E32C237F140019C111 /* PBXTargetDependency */,
+			);
+			name = "hemnet-unitTest";
+			productName = "hemnet-unitTest";
+			productReference = 144BB1DE2C237F140019C111 /* hemnet-unitTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14B21EF82C206C7A00F99E9E /* hemnet-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B21F072C206C7B00F99E9E /* Build configuration list for PBXNativeTarget "hemnet-test" */;
+			buildPhases = (
+				14B21EF52C206C7A00F99E9E /* Sources */,
+				14B21EF62C206C7A00F99E9E /* Frameworks */,
+				14B21EF72C206C7A00F99E9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hemnet-test";
+			productName = "hemnet-test";
+			productReference = 14B21EF92C206C7A00F99E9E /* hemnet-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14B21EF12C206C7A00F99E9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					144BB1DD2C237F140019C111 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 14B21EF82C206C7A00F99E9E;
+					};
+					14B21EF82C206C7A00F99E9E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 14B21EF42C206C7A00F99E9E /* Build configuration list for PBXProject "hemnet-test" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14B21EF02C206C7A00F99E9E;
+			productRefGroup = 14B21EFA2C206C7A00F99E9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14B21EF82C206C7A00F99E9E /* hemnet-test */,
+				144BB1DD2C237F140019C111 /* hemnet-unitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		144BB1DC2C237F140019C111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B21EF72C206C7A00F99E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B21F042C206C7B00F99E9E /* Preview Assets.xcassets in Resources */,
+				144BB1CE2C22BF610019C111 /* MockPropertyDetail.json in Resources */,
+				14B21F132C20737800F99E9E /* MockProperties.json in Resources */,
+				14B21F012C206C7B00F99E9E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		144BB1DA2C237F140019C111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A1FB832C299A860042DDDE /* ProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B21EF52C206C7A00F99E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B21EFF2C206C7A00F99E9E /* ContentView.swift in Sources */,
+				14E581F62C2172B6009C737D /* ImageLoaderView.swift in Sources */,
+				14B21F162C20DE1D00F99E9E /* API.Model.swift in Sources */,
+				14E582152C22513C009C737D /* PropertyDetailView.swift in Sources */,
+				14A1FB7D2C2994B70042DDDE /* Provider.swift in Sources */,
+				14A1FB5D2C2871250042DDDE /* API.Endpoint.swift in Sources */,
+				14A1FB742C287F040042DDDE /* API.Model.PropertyListing.swift in Sources */,
+				14B21F1F2C20DFEA00F99E9E /* PropertyModel.swift in Sources */,
+				1443E93E2C2788AF009DEAF0 /* PropertySearchService.swift in Sources */,
+				14B21EFD2C206C7A00F99E9E /* hemnet_testApp.swift in Sources */,
+				144BB1FB2C24A9280019C111 /* PropertyDetailProvider.swift in Sources */,
+				1443E93C2C278172009DEAF0 /* API.Endpoint.PropertySearch.swift in Sources */,
+				14A1FB812C2998330042DDDE /* PropertyDetailViewModel.swift in Sources */,
+				14B21F0E2C206E9600F99E9E /* API.swift in Sources */,
+				14B21F182C20DE5000F99E9E /* API.Model.Property.swift in Sources */,
+				14A1FB792C28E9E70042DDDE /* PropertyView.swift in Sources */,
+				14A1FB7F2C2997290042DDDE /* ImageLoaderModel.swift in Sources */,
+				14E582012C21CE59009C737D /* AreaModel.swift in Sources */,
+				14A1FB552C2866C40042DDDE /* HTTPDataDownloader.swift in Sources */,
+				143D4B702C274E1300193CD7 /* Environment.swift in Sources */,
+				14A1FB6A2C2874B90042DDDE /* ServiceProtocol.swift in Sources */,
+				144BB1CA2C22B8D40019C111 /* API.Endpoint.PropertyDetail.swift in Sources */,
+				14E5820D2C21F2D8009C737D /* AreaView.swift in Sources */,
+				1443E9402C278AE2009DEAF0 /* PropertySearchProvider.swift in Sources */,
+				14E581FE2C21B896009C737D /* API.Model.Area.swift in Sources */,
+				144BB1F92C24A90E0019C111 /* PropertyDetailService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		144BB1E32C237F140019C111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14B21EF82C206C7A00F99E9E /* hemnet-test */;
+			targetProxy = 144BB1E22C237F140019C111 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1443E9332C276F82009DEAF0 /* Debug (Prod) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug (Prod)";
+		};
+		1443E9342C276F82009DEAF0 /* Debug (Prod) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1443E9302C276D85009DEAF0 /* PROD.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "$(API_BASE_URL)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"hemnet-test/Preview Content\"";
+				DEVELOPMENT_TEAM = TP4YA6Q6DH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hemnet-test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joakimhellgren.hemnet-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug (Prod)";
+		};
+		1443E9352C276F82009DEAF0 /* Debug (Prod) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TP4YA6Q6DH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joakimhellgren.hemnet-unitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hemnet-test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hemnet-test";
+			};
+			name = "Debug (Prod)";
+		};
+		1443E9362C276F93009DEAF0 /* Release (Prod) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release (Prod)";
+		};
+		1443E9372C276F93009DEAF0 /* Release (Prod) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1443E9302C276D85009DEAF0 /* PROD.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "$(API_BASE_URL)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"hemnet-test/Preview Content\"";
+				DEVELOPMENT_TEAM = TP4YA6Q6DH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hemnet-test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joakimhellgren.hemnet-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release (Prod)";
+		};
+		1443E9382C276F93009DEAF0 /* Release (Prod) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TP4YA6Q6DH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joakimhellgren.hemnet-unitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hemnet-test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hemnet-test";
+			};
+			name = "Release (Prod)";
+		};
+		144BB1E52C237F140019C111 /* Debug (Dev) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TP4YA6Q6DH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joakimhellgren.hemnet-unitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hemnet-test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hemnet-test";
+			};
+			name = "Debug (Dev)";
+		};
+		14B21F052C206C7B00F99E9E /* Debug (Dev) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug (Dev)";
+		};
+		14B21F082C206C7B00F99E9E /* Debug (Dev) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1443E9312C276E4A009DEAF0 /* DEV.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "$(API_BASE_URL)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"hemnet-test/Preview Content\"";
+				DEVELOPMENT_TEAM = TP4YA6Q6DH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hemnet-test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joakimhellgren.hemnet-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug (Dev)";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		144BB1E42C237F140019C111 /* Build configuration list for PBXNativeTarget "hemnet-unitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144BB1E52C237F140019C111 /* Debug (Dev) */,
+				1443E9352C276F82009DEAF0 /* Debug (Prod) */,
+				1443E9382C276F93009DEAF0 /* Release (Prod) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug (Dev)";
+		};
+		14B21EF42C206C7A00F99E9E /* Build configuration list for PBXProject "hemnet-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B21F052C206C7B00F99E9E /* Debug (Dev) */,
+				1443E9332C276F82009DEAF0 /* Debug (Prod) */,
+				1443E9362C276F93009DEAF0 /* Release (Prod) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug (Dev)";
+		};
+		14B21F072C206C7B00F99E9E /* Build configuration list for PBXNativeTarget "hemnet-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B21F082C206C7B00F99E9E /* Debug (Dev) */,
+				1443E9342C276F82009DEAF0 /* Debug (Prod) */,
+				1443E9372C276F93009DEAF0 /* Release (Prod) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug (Dev)";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14B21EF12C206C7A00F99E9E /* Project object */;
+}

@@ -1,0 +1,3 @@
+extension API {
+    enum Model {}
+}
