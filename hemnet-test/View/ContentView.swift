@@ -4,6 +4,9 @@ struct ContentView: View {
     @EnvironmentObject 
     var provider: PropertySearchProvider
     
+    @State
+    var hasError = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -20,7 +23,8 @@ struct ContentView: View {
             .refreshable(action: provider.fetch)
             .navigationDestination(for: PropertyModel.self, destination: PropertyDetailView.init)
         }
-        .alert(isPresented: .constant(provider.error != nil), error: provider.error) {}
+        .alert(isPresented: $hasError, error: provider.error) {}
+        .onReceive(provider.$error) { hasError = $0 != nil }
         .task(provider.fetch)
     }
     

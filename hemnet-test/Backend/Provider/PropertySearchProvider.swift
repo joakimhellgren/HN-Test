@@ -25,6 +25,7 @@ final class PropertySearchProvider: Provider, ObservableObject {
     @Sendable
     func fetch() async -> Void {
         do {
+            self.error = nil
             self.isLoading = true
             
             guard let (area, properties) = try await service.fetch() as? Result else {
